@@ -3,7 +3,11 @@ var __courses = {
     "name": "GENERAL PHYSICS I",
     "credit": 4
   },
-  "BIOL106": {
+  "PHYS106": {
+    "name": "GENERAL PHYSICS II",
+    "credit": 4
+  },
+  "BIOL109": {
     "name": "GENERAL BIOLOGY",
     "credit": 3
   },
@@ -11,12 +15,28 @@ var __courses = {
     "name": "CALCULUS WITH ANALYTIC GEOMETRY",
     "credit": 5
   },
+  "MATH120": {
+    "name": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+    "credit": 5
+  },
+  "MATH260": {
+    "name": "BASIC LINEAR ALGEBRA",
+    "credit": 3
+  },
   "CENG111": {
     "name": "INTRODUCTION TO COMPUTER ENG. CONCEPTS",
     "credit": 4
   },
+  "CENG140": {
+    "name": "C PROGRAMMING",
+    "credit": 4
+  },
   "ENG101": {
     "name": "ENGLISH FOR ACADEMIC PURPOSES I",
+    "credit": 4
+  },
+  "ENG102": {
+    "name": "ENGLISH FOR ACADEMIC PURPOSES II",
     "credit": 4
   },
   "CENG229": {
@@ -35,35 +55,34 @@ var __courses = {
     "name": "GENERAL CHEMISTRY",
     "credit": 4
   },
+  "ME105": {
+    "name": "COMPUTER AIDED ENGINEERING GRAPHICS",
+    "credit": 3
+  },
   "ME110": {
     "name": "INTRODUCTION TO MECHANICAL ENGINEERING",
-    "credit": 3
-  }
+    "credit": 2
+  },
 }
 
 var __depts = {
   "ceng": {
-    "courses": ["PHYS105", "BIOL106", "MATH119", "CENG111", "ENG101"],
+    "id": "ceng",
+    "courses": [["PHYS105", "BIOL109", "MATH119", "CENG111", "ENG101"], ["PHYS106", "MATH119", "MATH260", "CENG140", "ENG102"]],
     "short_name": "CENG",
     "name": "Computer Engineeering",
-    "id": "ceng"
   },
   "ee": {
-    "courses": ["PHYS105", "CHEM107", "MATH119", "CENG229", "ENG101"],
+    "id": "ee",
+    "courses": [["PHYS105", "CHEM107", "MATH119", "CENG229", "ENG101"], ["PHYS106", "MATH119", "MATH120", "ME105", "ENG102"]],
     "short_name": "EE",
     "name": "Electric & Electronics Engineering",
-    "id": "ee"
   },
-  "me1": {
-    "courses": ["PHYS105", "MATH119", "ME117", "CENG230", "ENG101"],
-    "short_name": "ME (117)",
+  "me": {
+    "id": "me",
+    "courses": [["PHYS105", "MATH119", "ME117", "CENG230", "ENG101"], ["PHYS106", "CHEM107", "MATH120", "ME100", "ENG102"]],
+    "short_name": "ME",
     "name": "Mechanical Engineering",
-    "id": "me1"
   },
-  "me2": {
-    "courses": ["PHYS105", "MATH119", "ME110", "CENG230", "ENG101"],
-    "short_name": "ME (110)",
-    "name": "Mechanical Engineering",
-    "id": "me2"
-  }
 }
+

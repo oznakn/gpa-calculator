@@ -30,32 +30,35 @@
         </select>
       </div>
 
-      <table align="center" id="grade-tab">
-        <tr>
-          <th>Course Code</th>
-          <th>Course Name</th>
-          <th>METU Credit</th>
-          <th>Grade</th>
-        </tr>
-        <tr v-for="course_code in depts[dept].courses">
-          <td>{{course_code}}</td>
-          <td>{{courses[course_code].name}}</td>
-          <td>{{courses[course_code].credit}}</td>
-          <td>
-            <select class="tb-sel" :data-ccode="course_code" :data-ccredit="courses[course_code].credit" v-on:change="update_gpa()">
-              <option value="4">AA</option>
-              <option value="3.5">BA</option>
-              <option value="3">BB</option>
-              <option value="2.5">CB</option>
-              <option value="2">CC</option>
-              <option value="1.5">DC</option>
-              <option value="1">DD</option>
-              <option value="0.5">FD</option>
-              <option value="0">FF</option>
-              <option value="0">NA</option>
-            </select>
-          </td>
-        </tr>
+      <table class="grade-tab">
+        <tbody v-for="(semester, index) in depts[dept].courses">
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>METU Credit</th>
+            <th>Grade</th>
+          </tr>
+
+          <tr v-for="course_code in semester" :key="course_code">
+            <td>{{course_code}}</td>
+            <td>{{courses[course_code].name}}</td>
+            <td>{{courses[course_code].credit}}</td>
+            <td>
+              <select class="tb-sel" :data-ccode="course_code" :data-ccredit="courses[course_code].credit" v-on:change="update_gpa()">
+                <option value="4">AA</option>
+                <option value="3.5">BA</option>
+                <option value="3">BB</option>
+                <option value="2.5">CB</option>
+                <option value="2">CC</option>
+                <option value="1.5">DC</option>
+                <option value="1">DD</option>
+                <option value="0.5">FD</option>
+                <option value="0">FF</option>
+                <option value="0">NA</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <div class="sect-bottom">

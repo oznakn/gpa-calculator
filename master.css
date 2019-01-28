@@ -1,9 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
 }
 
 #app {
   margin-top: 60px;
+  padding-bottom: 230px;
   font-family: 'Noto Sans SC', sans-serif;
 }
 
@@ -37,15 +39,17 @@ html, body {
   text-align: center;
 }
 
-#grade-tab {
-  text-align: left;
+.grade-tab {
+  text-align: center;
+  margin: 0 auto;
 }
 
-#grade-tab th,td {
+.grade-tab th,
+td {
   padding: 5px 10px;
 }
 
-#grade-tab td {
+.grade-tab td {
   font-size: 14px;
 }
 
