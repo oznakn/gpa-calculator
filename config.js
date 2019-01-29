@@ -68,13 +68,13 @@ var __courses = {
 var __depts = {
   "ceng": {
     "id": "ceng",
-    "courses": [["PHYS105", "BIOL109", "MATH119", "CENG111", "ENG101"], ["PHYS106", "MATH119", "MATH260", "CENG140", "ENG102"]],
+    "courses": [["PHYS105", "BIOL109", "MATH119", "CENG111", "ENG101"], ["PHYS106", "MATH120", "MATH260", "CENG140", "ENG102"]],
     "short_name": "CENG",
     "name": "Computer Engineeering",
   },
   "ee": {
     "id": "ee",
-    "courses": [["PHYS105", "CHEM107", "MATH119", "CENG229", "ENG101"], ["PHYS106", "MATH119", "MATH120", "ME105", "ENG102"]],
+    "courses": [["PHYS105", "CHEM107", "MATH119", "CENG229", "ENG101"], ["PHYS106", "MATH120", "MATH260", "ME105", "ENG102"]],
     "short_name": "EE",
     "name": "Electric & Electronics Engineering",
   },
